@@ -109,7 +109,7 @@ int main()
         printf("Writing to file\n");
         char buffer[127];
         sprintf(buffer, "Teste %u\n", 1);
-        if(file.write((const uint8_t*)buffer, strlen(buffer)) != strlen(buffer)+1){
+        if(file.write((const uint8_t*)buffer, strlen(buffer)) != strlen(buffer)){
             printf("Write error\n");
             handle_error();
         } else {
